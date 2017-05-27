@@ -15,48 +15,76 @@
 
 <body>
 
-  <h2>Toggle it!</h2>
+<h2>Toggle it!</h2>
 <ul class='tg-list'>
   <li class='tg-list-item'>
-    <h4>Light</h4>
-    <input class='tgl tgl-light' id='cb1' type='checkbox'>
-    <label class='tgl-btn' for='cb1'></label>
+    <h4>Light (checkbox)</h4>
+    <input type='hidden' name='cb_light' value='0' />
+    <input class='tgl tgl-light' id='cb-light' type='checkbox' name='cb_light' value='1' />
+    <label class='tgl-btn' for='cb-light'></label>
   </li>
   <li class='tg-list-item'>
-    <h4>iOS 7</h4>
-    <input class='tgl tgl-ios' id='cb2' type='checkbox'>
-    <label class='tgl-btn' for='cb2'></label>
-  </li>
-  <li class='tg-list-item'>
-    <h4>Skewed</h4>
-    <input class='tgl tgl-skewed' id='cb3' type='checkbox'>
-    <label class='tgl-btn' data-tg-off='OFF' data-tg-on='ON' for='cb3'></label>
+    <h4>Light (radio)</h4>
+    <input class='tgl tgl-light' id='radio-light_on' type='radio' name='radio_light' value='1' />
+    <label class='tgl-btn' for='radio-light_on' data-tg-off='OFF' data-tg-on='ON'></label>
+    <input class='tgl tgl-light' id='radio-light_off' type='radio' name='radio_light' value='0' checked='checked' />
+    <label class='tgl-btn' for='radio-light_off' data-tg-off='OFF' data-tg-on='ON'></label>
   </li>
 
   <li class='tg-list-item'>
-    <h4>Flat</h4>
-    <input class='tgl tgl-flat' id='cb4' type='checkbox'>
-    <label class='tgl-btn' for='cb4'></label>
+    <h4>iOS 7 (checkbox)</h4>
+    <input type='hidden' name='cb_ios' value='0' />
+    <input class='tgl tgl-ios' id='cb-ios' type='checkbox' name='cb_ios' value='1' />
+    <label class='tgl-btn' for='cb-ios'></label>
   </li>
   <li class='tg-list-item'>
-    <h4>Flat</h4>
-    <input class='tgl tgl-flat' id='flat_on' type='radio' name='flip' value='1' />
-    <label class='tgl-btn' for='flat_on'></label>
-    <input class='tgl tgl-flat' id='flat_off' type='radio' name='flip' value='0' checked='checked' />
-    <label class='tgl-btn' for='flat_off'></label>
+    <h4>iOS 7 (radio)</h4>
+    <input class='tgl tgl-ios' id='radio-ios_on' type='radio' name='radio_ios' value='1' />
+    <label class='tgl-btn' for='radio-ios_on' data-tg-off='OFF' data-tg-on='ON'></label>
+    <input class='tgl tgl-ios' id='radio-ios_off' type='radio' name='radio_ios' value='0' checked='checked' />
+    <label class='tgl-btn' for='radio-ios_off' data-tg-off='OFF' data-tg-on='ON'></label>
   </li>
 
   <li class='tg-list-item'>
-    <h4>Flip</h4>
-    <input class='tgl tgl-flip' id='cb5' type='checkbox'>
-    <label class='tgl-btn' data-tg-off='OFF' data-tg-on='ON' for='cb5'></label>
+    <h4>Skewed (checkbox)</h4>
+    <input type='hidden' name='cb_skewed' value='0' />
+    <input class='tgl tgl-skewed' id='cb-skewed' type='checkbox' name='cb_skewed' value='1' />
+    <label class='tgl-btn' data-tg-off='OFF' data-tg-on='ON' for='cb-skewed'></label>
   </li>
   <li class='tg-list-item'>
-    <h4>Flat</h4>
-    <input class='tgl tgl-flip' id='flip_on' type='radio' name='flat' value='1' />
-    <label class='tgl-btn' for='flip_on' data-tg-off='OFF' data-tg-on='ON'></label>
-    <input class='tgl tgl-flip' id='flip_off' type='radio' name='flat' value='0' checked='checked' />
-    <label class='tgl-btn' for='flip_off' data-tg-off='OFF' data-tg-on='ON'></label>
+    <h4>Skewed (radio)</h4>
+    <input class='tgl tgl-skewed' id='radio-skewed_on' type='radio' name='radio_skewed' value='1' />
+    <label class='tgl-btn' for='radio-skewed_on' data-tg-off='OFF' data-tg-on='ON'></label>
+    <input class='tgl tgl-skewed' id='radio-skewed_off' type='radio' name='radio_skewed' value='0' checked='checked' />
+    <label class='tgl-btn' for='radio-skewed_off' data-tg-off='OFF' data-tg-on='ON'></label>
+  </li>
+
+  <li class='tg-list-item'>
+    <h4>Flat (checkbox)</h4>
+    <input type='hidden' name='cb_flat' value='0' />
+    <input class='tgl tgl-flat' id='cb-flat' type='checkbox' name='cb_flat' value='1' />
+    <label class='tgl-btn' for='cb-flat'></label>
+  </li>
+  <li class='tg-list-item'>
+    <h4>Flat (radio)</h4>
+    <input class='tgl tgl-flat' id='radio-flat_on' type='radio' name='radio_flat' value='1' />
+    <label class='tgl-btn' for='radio-flat_on'></label>
+    <input class='tgl tgl-flat' id='radio-flat_off' type='radio' name='radio_flat' value='0' checked='checked' />
+    <label class='tgl-btn' for='radio-flat_off'></label>
+  </li>
+
+  <li class='tg-list-item'>
+    <h4>Flip (checkbox)</h4>
+    <input type='hidden' name='cb_flip' value='0' />
+    <input class='tgl tgl-flip' id='cb-flip' type='checkbox' name='cb_flip' value='1' />
+    <label class='tgl-btn' data-tg-off='OFF' data-tg-on='ON' for='cb-flip'></label>
+  </li>
+  <li class='tg-list-item'>
+    <h4>Flat (radio)</h4>
+    <input class='tgl tgl-flip' id='radio-flip_on' type='radio' name='radio_flip' value='1' />
+    <label class='tgl-btn' for='radio-flip_on' data-tg-off='OFF' data-tg-on='ON'></label>
+    <input class='tgl tgl-flip' id='radio-flip_off' type='radio' name='radio_flip' value='0' checked='checked' />
+    <label class='tgl-btn' for='radio-flip_off' data-tg-off='OFF' data-tg-on='ON'></label>
   </li>
 </ul>
 
